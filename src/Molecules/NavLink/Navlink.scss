@@ -1,0 +1,20 @@
+@import '../../assets/styles/fonts';
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.ul-items {
+   @include flex-center-y;
+    list-style: none;
+    .li-items {
+        display: flex;
+        justify-items: center;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            margin: 0 1rem;
+            color: $color_dark_gray;
+            font-family: $font-poppins;
+        }
+        
+    }
+}
