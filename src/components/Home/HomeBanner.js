@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 import './HomeBanner.scss'
 import imgtest from '../../assets/images/img1.png'
 import imgthumbone  from '../../assets/images/thumb1.png'
@@ -8,12 +8,22 @@ import facebook from '../../assets/images/facebook.png'
 import twitter from '../../assets/images/twitter.png'
 import instagram from '../../assets/images/instagram.png'
 
+import productData from '../../utils/productData'
+
 
 
 const HomeBanner = () => {
+
+  const [data, setData] = useState({image:productData[0].images[0], index:0});
+console.log(data)
+  // console.log(productData[0].images[2]);
+  //style={{ border: data.image === image ? '1px solid blue' : ''}}
+
+
+
   return (
     <section>
-        <div className='circle'></div>
+        <div className='circle' ></div>
        <div className='block-text'>
         <h2> It's not just Coffee <br></br> It's  <span className='starbucks-txt'>Starbucks</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -23,12 +33,24 @@ const HomeBanner = () => {
             <a href="#">Learn More</a>
        </div>
        <div className='block-img'>
-        <img src={imgtest} alt=""/>
+        <img src={data}
+         />
        </div>
        <ul className='thumb'>
-        <li><img src={imgthumbone} alt=""/></li>
-        <li><img src={imgthumbtwo} alt=""/></li>
-        <li><img src={imgthumbthree} alt=""/></li>
+        {
+          /*Mapping through nested loop to retrive thumb images */
+          productData.map((item,Index) => {
+            //console.log(item.images);
+            return (
+              item.images.map((itemimg, index) => {
+                //console.log(itemimg);
+                return (
+                  <li><img src={itemimg} onClick={()=> setData(itemimg, index)} alt="" key={index}/></li>
+                )
+              })
+            )
+        })}
+      
        </ul>
        <ul className='social'>
         <li><a href="#"><img src={facebook}/></a></li>
