@@ -15,7 +15,12 @@ import productData from '../../utils/productData'
 const HomeBanner = () => {
 
   const [data, setData] = useState({image:productData[0].images[0], index:0});
-console.log(data)
+  const [datacolor , setDatacolor] = useState(0);
+  console.log(datacolor)
+
+  useEffect(()=> {
+    setData (productData[0].images[0])
+  },[])
   // console.log(productData[0].images[2]);
   //style={{ border: data.image === image ? '1px solid blue' : ''}}
   //https://github.com/CodeWithYd/e-commerce-product-viewer/blob/master/src/ProductViewer.js
@@ -24,7 +29,7 @@ console.log(data)
 
   return (
     <section>
-        <div className='circle' ></div>
+        <div className='circle' style={{backgroundColor: productData[0].colors[datacolor]}}></div>
        <div className='block-text'>
         <h2> It's not just Coffee <br></br> It's  <span className='starbucks-txt'>Starbucks</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -46,7 +51,7 @@ console.log(data)
               item.images.map((itemimg, index) => {
                 //console.log(itemimg);
                 return (
-                  <li><img src={itemimg} onClick={()=> setData(itemimg, index)} alt="" key={index}/></li>
+                  <li><img src={itemimg} onClick={()=> {setData(itemimg, index); setDatacolor(index)}} alt="" key={index}/></li>
                 )
               })
             )

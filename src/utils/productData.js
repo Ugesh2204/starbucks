@@ -8,9 +8,8 @@ const productData = [
         title: "Mens Cotton Jacket", 
         price: 55.99, 
         description: "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.", 
-         images:[
-            imgbigone,imgbigtwo,imgbigthree
-         ]
+        images:[ imgbigone,imgbigtwo,imgbigthree],
+        colors:['#017143','#ee6d9c', '#333333']
        
         // images:{
         //     image: [
