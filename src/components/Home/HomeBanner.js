@@ -18,6 +18,7 @@ const HomeBanner = () => {
 console.log(data)
   // console.log(productData[0].images[2]);
   //style={{ border: data.image === image ? '1px solid blue' : ''}}
+  //https://github.com/CodeWithYd/e-commerce-product-viewer/blob/master/src/ProductViewer.js
 
 
 
