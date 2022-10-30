@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e3d97cf.css",
-    "main.js": "/static/js/main.0a76c584.js",
-    "static/media/img2.png": "/static/media/img2.a33944e3637c086970f7.png",
-    "static/media/img1.png": "/static/media/img1.8fc07f155ccce1caec3a.png",
-    "static/media/img3.png": "/static/media/img3.61b22f49cf00929dabdb.png",
-    "static/media/thumb1.png": "/static/media/thumb1.1e6ce44a590aa5d2631f.png",
-    "static/media/thumb2.png": "/static/media/thumb2.4436a39b491f4a8da0c5.png",
-    "static/media/thumb3.png": "/static/media/thumb3.00b72d1c24110d68ca02.png",
-    "static/media/logo.png": "/static/media/logo.766153cbcc832191a238.png",
-    "index.html": "/index.html",
-    "main.4e3d97cf.css.map": "/static/css/main.4e3d97cf.css.map",
-    "main.0a76c584.js.map": "/static/js/main.0a76c584.js.map"
+    "main.css": "/starbucks/static/css/main.4e3d97cf.css",
+    "main.js": "/starbucks/static/js/main.1f203c7a.js",
+    "static/media/img2.png": "/starbucks/static/media/img2.a33944e3637c086970f7.png",
+    "static/media/img1.png": "/starbucks/static/media/img1.8fc07f155ccce1caec3a.png",
+    "static/media/img3.png": "/starbucks/static/media/img3.61b22f49cf00929dabdb.png",
+    "static/media/thumb1.png": "/starbucks/static/media/thumb1.1e6ce44a590aa5d2631f.png",
+    "static/media/thumb2.png": "/starbucks/static/media/thumb2.4436a39b491f4a8da0c5.png",
+    "static/media/thumb3.png": "/starbucks/static/media/thumb3.00b72d1c24110d68ca02.png",
+    "static/media/logo.png": "/starbucks/static/media/logo.766153cbcc832191a238.png",
+    "index.html": "/starbucks/index.html",
+    "main.4e3d97cf.css.map": "/starbucks/static/css/main.4e3d97cf.css.map",
+    "main.1f203c7a.js.map": "/starbucks/static/js/main.1f203c7a.js.map"
   },
   "entrypoints": [
     "static/css/main.4e3d97cf.css",
-    "static/js/main.0a76c584.js"
+    "static/js/main.1f203c7a.js"
   ]
 }
