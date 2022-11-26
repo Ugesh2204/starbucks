@@ -3,18 +3,35 @@
 @import '../../assets/styles/variables';
 
 .ul-items {
-   @include flex-center-y;
+    background-color: $color_green;
+    height: 100vh;
     list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    left: -105%;
+    transition: all 0.25s;
+    z-index: 2;
+  
     .li-items {
         display: flex;
+        flex-direction: column;
         justify-items: center;
         justify-content: space-between;
+       
         a {
             text-decoration: none;
             margin: 0 1rem;
-            color: $color_dark_gray;
+            color: $color-white;
             font-family: $font-poppins;
+            padding:1rem;
         }
         
     }
+
+}
+
+
+.ul-items.active {
+    left:0;
 }
