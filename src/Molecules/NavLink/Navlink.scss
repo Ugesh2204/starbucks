@@ -35,3 +35,44 @@
 .ul-items.active {
     left:0;
 }
+
+.ul-items-deskstop-menu {
+    display:none;
+}
+  
+
+
+
+@media only screen and (min-width:768px) {
+
+
+    .ul-items-deskstop-menu {
+        display: block;
+        @include flex-center-y;
+         list-style: none;
+         .li-items {
+             display: flex;
+             justify-items: center;
+             justify-content: space-between;
+             a {
+                 text-decoration: none;
+                 margin: 0 1rem;
+                 color: $color_dark_gray;
+                 font-family: $font-poppins;
+             }
+             
+         }
+     }
+
+
+    .ul-items {display: none;}
+
+   
+  
+}
+
+
+@media only screen and (min-width:1024px) {
+
+
+}

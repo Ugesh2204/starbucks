@@ -10,6 +10,7 @@ const NavLink = ({ isNavExpand,setIsNavExpanded }) => {
   }
  }
   return (
+    <>
     <ul className={`ul-items ${isNavExpand === true ? 'active':''}`}>
         <li className='li-items'>
             <Link to='/' onClick={closeMobileMenu}>Home</Link>
@@ -18,6 +19,19 @@ const NavLink = ({ isNavExpand,setIsNavExpanded }) => {
             <Link to='/contact' onClick={closeMobileMenu}>contact</Link>
         </li>
     </ul>
+
+    <ul className='ul-items-deskstop-menu'>
+      <li className='li-items'>
+          <Link to='/'>Home</Link>
+          <Link to='/menu'>Menu</Link>
+          <Link to='/whatsnew'>What's New</Link>
+          <Link to='/contact'>contact</Link>
+      </li>
+    </ul>
+</>
+
+
+    
   )
 }
 
