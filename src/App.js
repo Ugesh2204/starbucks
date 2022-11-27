@@ -1,13 +1,19 @@
+import React, { useEffect } from 'react';
 import './App.scss';
 import Header from '../src/components/Header/Header'
-import {
-  Routes,
-  Route,
-} from "react-router-dom";
+import {Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import Home from './Pages/Home'
 import Menu from './Pages/Menu'
 
 function App() {
+
+  let navigate = useNavigate();
+  
+  useEffect(() => {
+    navigate("/");
+  }, [])
+
+
   return (
     <>
       <Header/>
